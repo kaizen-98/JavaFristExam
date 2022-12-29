@@ -25,17 +25,21 @@ public class MyMain {
 		File file = new File("\\Users\\Lenovo\\eclipseee\\projectExam101\\file101.pdf");
 		Scanner scan = new Scanner(file);
 		String txtContent ="";
-		for (int i=0;i<100;i++) {
-			file = new File("file"+i+".pdf");
+		
 			while(scan.hasNextLine()) {
 				
 				//System.out.println(scan.nextLine());
 				txtContent = txtContent.concat(scan.nextLine() + "\n");
-				file.createNewFile();
-			}
+			
+			
 			
 		}
-		
+		for (int i =0; i<99; i++) {
+			 write = new FileWriter("\\Users\\Lenovo\\eclipseee\\projectExam101\\file101"+i+".pdf");
+			 write.write(txtContent);
+			 write.close();
+				
+		}
 		
 		
 		

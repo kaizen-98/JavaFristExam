@@ -41,8 +41,13 @@ public class MyMain {
 				
 		}
 		
-		
-		
+		System.out.println("write word wannna seach about?");
+		String word = scan.next();
+			while(scan.equals(word)) {
+				System.out.println(scan.nextLine());
+			
+			
+		}
 	}
 
 }
